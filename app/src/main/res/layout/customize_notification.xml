@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_notification_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:padding="5dp"
+    android:backgroundTint="@color/colorAccent">
+    <ImageView
+        android:src="@drawable/notification_icon"
+        android:id="@+id/notification_image"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:id="@+id/dateAndName"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/notification_image"
+        />
+    <TextView
+        android:id="@+id/notificationSender"
+        android:textColor="@color/colorAccent"
+        android:paddingTop="10dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/notification_image"
+        android:layout_below="@id/dateAndName"
+        />
+    <TextView
+        android:id="@+id/notificationContent"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/notification_image"
+        android:layout_below="@id/notificationSender"
+        />
+</RelativeLayout>
